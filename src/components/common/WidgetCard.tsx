@@ -1,8 +1,8 @@
-import { PropsWithChildren } from 'react'
+import type { PropsWithChildren, ReactNode } from 'react'
 
 type WidgetCardProps = PropsWithChildren<{
   title: string
-  actions?: React.ReactNode
+  actions?: ReactNode
 }>
 
 export function WidgetCard({ title, actions, children }: WidgetCardProps) {

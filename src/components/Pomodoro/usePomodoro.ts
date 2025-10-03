@@ -94,7 +94,7 @@ export function usePomodoro(initial?: Partial<PomodoroConfig>) {
   }, [computeRemaining])
 
   const reset = useCallback(() => {
-    setState((prev) => ({
+    setState(() => ({
       mode: 'work',
       isRunning: false,
       startTimestampMs: null,
